@@ -1,0 +1,22 @@
+project_id = "sgzoqjevgmxlfqavwngz"
+
+# All five functions are called by signed-in users with a real Supabase Auth JWT.
+# Keep platform JWT verification enabled; the handler also validates the token
+# before performing privileged work.
+[functions.admin-create-user]
+verify_jwt = true
+
+[functions.admin-delete-user]
+verify_jwt = true
+
+[functions.admin-update-user]
+verify_jwt = true
+
+[functions.submit-assessment]
+verify_jwt = true
+
+[functions.start-assessment]
+verify_jwt = true
+
+[functions.admin-review-attempt]
+verify_jwt = true
